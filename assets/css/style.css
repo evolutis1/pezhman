@@ -1,0 +1,117 @@
+    
+      .containerMenu {
+        position: absolute;
+        max-width: 81rem;
+        width: 100%;
+        margin: 0 auto;
+        z-index: 10;
+      }
+     
+      header {
+        position: relative;
+        z-index: 70;
+      }
+      .linksMenu {
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        border-radius: 20px;
+      }
+      .linksMenu div {
+        margin: 0 2.5rem 0 2.5rem;
+      }
+      .linksMenu a {
+        color: white;
+  
+        transition: 0.3s;
+        font-size: 12pt;
+      }
+
+      .linksMenu a:hover {
+        color: #5bacdf;
+        transform: scale(1.05);
+        opacity: 1;
+      }
+
+      .containerMenu{
+        max-width: 1170px;
+        margin:auto;
+        margin-top: 10px;
+      }
+      
+      .photoSec {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+       }
+
+    .photoSec div {
+      flex: 30%;
+      height: 527px;
+      position: relative;
+    }
+    .photoSec div img {
+      width: 100%;
+      height: 527px;
+      object-fit: cover;
+    }
+    .photoSec div:hover {
+      cursor: pointer;
+    }
+    .photoSec div:after {
+      content: '\A';
+      position: absolute;
+      width: 100%; height:100%;
+      top:0; left:0;
+      background:rgba(0,0,0,0.6);
+      opacity: 0;
+      transition: all 1s;
+      -webkit-transition: all 1s;
+    }
+    .photoSec div:hover:after {
+      opacity: 1;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 870px) {
+  
+  .linksMenu {
+    flex-direction: column;
+  }
+  .photoSec div {
+    flex: 100%;
+  }
+  .linksMenu .itemMenu {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .linksMenu {
+    flex-direction: column;
+    background-color: #312f3a;
+    box-shadow: 0 4px 2px -2px gray;
+    width: 100%;
+    border-radius: 0;
+
+  }
+  #containerMenu{
+    padding: 0 !important;
+    position: relative;
+    margin-top: 0;
+  }
+  .linksMenu .itemMenu {
+    flex: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0rem 0rem 0rem;
+    padding: 0.7rem 0rem 0.7rem 0rem;
+    border-radius: 15px;
+    
+  }
+  .linksMenu .itemMenu a {
+    font-size: 13pt;
+  }
+  
+}
